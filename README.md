@@ -1,4 +1,4 @@
-<img src="https://raw.githubusercontent.com/thiagodnf/jmetal-restful/master/src/main/resources/assets/logo.png" width="448"/>
+<img src="https://raw.githubusercontent.com/thiagodnf/jmetal-restful/master/src/main/resources/assets/logo.png" width="450"/>
 
 
 **A RESTFul Web Service for JMetal Framework**
@@ -35,21 +35,21 @@ Request:
 
 ```json
 {
-  "id": "1",
-  "solutions": [
-    {"objectives": [20, 12], "variables": ["0101"]},
-    {"objectives": [2, 11 ], "variables": ["0101"]},
-    {"objectives": [10, 11], "variables": ["0101"]},
-    {"objectives": [15, 11], "variables": ["0101"]},
-    {"objectives": [8, 9  ], "variables": ["0101"]},
-    {"objectives": [13, 8 ], "variables": ["0101"]},
-    {"objectives": [4, 7  ], "variables": ["0101"]},
-    {"objectives": [18, 6 ], "variables": ["0101"]},
-    {"objectives": [8, 5  ], "variables": ["0101"]},
-    {"objectives": [12, 5 ], "variables": ["0101"]},
-    {"objectives": [13, 2 ], "variables": ["0101"]},
-    {"objectives": [20, 1 ], "variables": ["0101"]},
-  ]
+    "id": "1",
+    "solutions": [
+        {"objectives": [20, 12], "variables": ["0101"]},
+        {"objectives": [2, 11 ], "variables": ["0101"]},
+        {"objectives": [10, 11], "variables": ["0101"]},
+        {"objectives": [15, 11], "variables": ["0101"]},
+        {"objectives": [8, 9  ], "variables": ["0101"]},
+        {"objectives": [13, 8 ], "variables": ["0101"]},
+        {"objectives": [4, 7  ], "variables": ["0101"]},
+        {"objectives": [18, 6 ], "variables": ["0101"]},
+        {"objectives": [8, 5  ], "variables": ["0101"]},
+        {"objectives": [12, 5 ], "variables": ["0101"]},
+        {"objectives": [13, 2 ], "variables": ["0101"]},
+        {"objectives": [20, 1 ], "variables": ["0101"]},
+    ]
 }
 ```
 

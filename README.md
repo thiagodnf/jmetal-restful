@@ -30,9 +30,11 @@ Each task has its own JSON-formatted string required. At the following there are
 
 <h3>Generate Pareto-front</h3>
 
+**The request type**: POST
 
-Request:
+**URL:** /generator/pareto-front
 
+**Body:**
 ```json
 {
     "id": "1",
@@ -53,7 +55,19 @@ Request:
 }
 ```
 
-Response:
+**Response:**
+```json
+{
+    "id": "1",
+    "solutions": [
+        {"objectives": [2, 11 ], "variables": ["0101"]},
+        {"objectives": [4, 7  ], "variables": ["0101"]},
+        {"objectives": [8, 5  ], "variables": ["0101"]},
+        {"objectives": [13, 2 ], "variables": ["0101"]},
+        {"objectives": [20, 1 ], "variables": ["0101"]},
+    ]
+}
+```
 
 
 

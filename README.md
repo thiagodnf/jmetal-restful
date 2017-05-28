@@ -22,3 +22,19 @@ The following image shows how this tools works
 <img src="https://raw.githubusercontent.com/thiagodnf/jmetal-restful/master/src/main/resources/assets/how-this-works.png" />
 
 First, the tool receives as input a JSON-formatted string in the body of a POST request provided by a client. Next, this one converts this string into a object instance that will used to run the algorithms available in JMetal Framework. When it is done, JMetal RESTFul will return a JSON-formatted string to the client. 
+
+Example of JSON requests
+---
+
+The following string is an example of JSON-formatted one that you should send to JMetal RESTFul
+
+```json
+{
+  "id": "1",
+  "solutions": [
+    {"objectives": [20, 12], "variables": ["0101"]}, 
+    {"objectives": [2, 11], "variables": ["0101"]}
+  ]
+}
+```
+

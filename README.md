@@ -12,8 +12,8 @@ Features
 
 JMetal RESTFul is able to do the following tasks:
 
-- Generate Pareto-front given a set of solutions
-- Calculate quality indicators given a set of solutions and a pareto-front
+- **Generate Pareto-front**  - This task generates a pareto-front given a set of solutions
+- **Calculate QualityIndicators** - This task calculates quality indicadors (such as Hypervolume, IGD, GD, and so on) given a set of solutions and a pareto-front set
 
 How this works
 --

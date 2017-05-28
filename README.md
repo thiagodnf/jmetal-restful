@@ -26,10 +26,10 @@ First, the tool receives as input a JSON-formatted string in the body of a POST 
 Usage
 --
 
-Each task has its own JSON-formatted string required. At the following there is some example how to use each task.
+Each task has its own JSON-formatted string required. At the following there are some examples how to use each task.
 
 Generate Pareto-front
-----
+-----
 
 Request
 

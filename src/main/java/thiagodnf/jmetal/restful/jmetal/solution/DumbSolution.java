@@ -1,9 +1,9 @@
-package thiagodnf.jmetal.restful.solution;
+package thiagodnf.jmetal.restful.jmetal.solution;
 
 import org.uma.jmetal.solution.Solution;
 import org.uma.jmetal.solution.impl.AbstractGenericSolution;
 
-import thiagodnf.jmetal.restful.problem.DumbProblem;
+import thiagodnf.jmetal.restful.jmetal.problem.DumbProblem;
 
 public class DumbSolution extends AbstractGenericSolution<String, DumbProblem> {
 

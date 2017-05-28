@@ -2,22 +2,22 @@ package thiagodnf.jmetal.restful.beans;
 
 import java.util.Arrays;
 
-public class Sol {
+public class Solution {
 
-	private int[] objectives;
+	private double[] objectives;
 
 	private String[] variables;
 
-	public Sol() {
+	public Solution() {
 		
 	}
 
-	public Sol(int[] objectives, String[] variables) {
+	public Solution(double[] objectives, String[] variables) {
 		this.objectives = objectives;
 		this.variables = variables;
 	}
 
-	public int[] getObjectives() {
+	public double[] getObjectives() {
 		return objectives;
 	}
 
@@ -25,7 +25,7 @@ public class Sol {
 		return variables;
 	}
 
-	public void setObjectives(int[] objectives) {
+	public void setObjectives(double[] objectives) {
 		this.objectives = objectives;
 	}
 

@@ -7,18 +7,18 @@ public class Population {
 	
 	private String id;
 	
-	private List<Sol> solutions;
+	private List<Solution> solutions;
 	
 	public Population() {
 		this.solutions = new ArrayList<>();
 	}
 
-	public Population(String id, List<Sol> solutions) {
+	public Population(String id, List<Solution> solutions) {
 		this.id = id;
 		this.solutions = solutions;
 	}
 
-	public List<Sol> getSolutions() {
+	public List<Solution> getSolutions() {
 		return solutions;
 	}
 
@@ -30,7 +30,7 @@ public class Population {
 		this.id = id;
 	}
 
-	public void setSolutions(List<Sol> solutions) {
+	public void setSolutions(List<Solution> solutions) {
 		this.solutions = solutions;
 	}
 

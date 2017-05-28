@@ -5,7 +5,6 @@
 	<artifactId>jmetal-restful</artifactId>
 	<version>1.0.0</version>
 	<name>JMetal RESTFul</name>
-	<description>A RESTFul Server for JMetal Framework</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -87,4 +86,5 @@
 		</pluginRepository>
 	</pluginRepositories>
 	<url>https://github.com/thiagodnf/jmetal-restful</url>
+	<description>A RESTFul Web Service for JMetal Framework</description>
 </project>

@@ -29,7 +29,7 @@ Usage
 Each task has its own JSON-formatted string required. At the following there is some example how to use each task.
 
 Generate Pareto-front
----
+----
 
 Request
 

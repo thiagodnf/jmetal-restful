@@ -1,4 +1,4 @@
-<img src="https://github.com/thiagodnf/jmetal-restful/blob/master/src/main/resources/assets/logo.png" width="448"/>
+<img src="https://raw.githubusercontent.com/thiagodnf/jmetal-restful/master/src/main/resources/assets/logo.png" width="448"/>
 
 
 **A RESTFul Web Service for JMetal Framework**
@@ -15,5 +15,10 @@ JMetal RESTFul is able to do the following tasks:
 - Generate Pareto-front given a set of solutions
 - Calculate quality indicators given a set of solutions and a pareto-front
 
-How to use
+How this works
 --
+The following image shows how this tools works
+
+<img src="https://raw.githubusercontent.com/thiagodnf/jmetal-restful/master/src/main/resources/assets/how-this-works.png" />
+
+First, the tool receives as input a JSON-formatted string in the body of a POST request provided by a client. Next, this one converts this string into a object instance that will used to run the algorithms available in JMetal Framework. When it is done, JMetal RESTFul will return a JSON-formatted string to the client. 

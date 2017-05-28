@@ -5,7 +5,7 @@
 
 Overview
 --
-JMetal RESTFul was built to turn available some features available in <a href="https://github.com/jMetal/jMetal">JMetal Framework</a>. This tool uses a RESTFul server powered by <a href="http://spring.io/">Spring</a> to expose some operations that can be access throught POST requests.
+JMetal RESTFul was built to turn available some features available in <a href="https://github.com/jMetal/jMetal">JMetal Framework</a>. This tool uses a RESTFul server powered by <a href="http://spring.io/">Spring</a> to expose some operations that can be access through POST requests.
 
 Features
 --

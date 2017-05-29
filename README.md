@@ -4,7 +4,7 @@
 **A RESTFul Web Service for JMetal Framework**
 
 Overview
---
+-
 JMetal RESTFul was built to turn available some features available in <a href="https://github.com/jMetal/jMetal">JMetal Framework</a>. This tool uses a RESTFul server powered by <a href="http://spring.io/">Spring</a> to expose some operations that can be access through POST requests.
 
 Features
@@ -70,6 +70,7 @@ Each task has its own JSON-formatted string required. At the following there are
 ```
 
 Warning
+--
 
 This is not an official JMetal Product product.
 

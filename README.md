@@ -38,7 +38,6 @@ Each task has its own JSON-formatted string required. At the following there are
 **Body:**
 ```json
 {
-    "id": "1",
     "solutions": [
         {"objectives": [20, 12], "variables": ["0101"]},
         {"objectives": [2, 11 ], "variables": ["0101"]},
@@ -59,7 +58,6 @@ Each task has its own JSON-formatted string required. At the following there are
 **Response:**
 ```json
 {
-    "id": "1",
     "solutions": [
         {"objectives": [2, 11 ], "variables": ["0101"]},
         {"objectives": [4, 7  ], "variables": ["0101"]},

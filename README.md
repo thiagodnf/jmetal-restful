@@ -24,6 +24,15 @@ The following image shows how this tools works
 
 First, the tool receives as input a JSON-formatted string in the body of a POST request provided by a client. Next, this one converts this string into a object instance that will used to run the algorithms available in JMetal Framework. When it is done, JMetal RESTFul will return a JSON-formatted string to the client. 
 
+Run the server
+-
+
+You can run the Application class as desktop application or run the following command
+
+```sh
+java -jar jmetal-restful-<version>.jar
+```
+
 Usage
 -
 

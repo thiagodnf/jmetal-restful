@@ -77,7 +77,7 @@ Each task has its own JSON-formatted string required. At the following there are
 **Body:**
 ```json
 {
-    paretoFront:{
+    "paretoFront":{
         "solutions": [
             {"objectives": [2, 11 ], "variables": ["0101"]},
             {"objectives": [4, 7  ], "variables": ["0101"]},
@@ -86,7 +86,7 @@ Each task has its own JSON-formatted string required. At the following there are
             {"objectives": [20, 1 ], "variables": ["0101"]},
         ]
     },
-    population: {
+    "population": {
         "solutions": [
             {"objectives": [8, 9  ], "variables": ["0101"]},
             {"objectives": [12, 5 ], "variables": ["0101"]},

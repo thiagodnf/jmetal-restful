@@ -118,6 +118,43 @@ Each task has its own JSON-formatted string required. At the following there are
 }
 ```
 
+Example with JQuery
+-
+The following javascript code contains an example of requests by using JQuery
+
+```javascript
+$.ajax({
+    url: 'http://localhost:8080/calculate/quality-indicators',
+    type: 'POST',
+    contentType: "application/json; charset=utf-8",
+    dataType: 'json',
+    processData:false, //To avoid making query String instead of JSON
+    data: JSON.stringify({
+	paretoFront:{
+	    "solutions": [
+		{"objectives": [2, 11 ], "variables": ["0101"]},
+		{"objectives": [4, 7  ], "variables": ["0101"]},
+		{"objectives": [8, 5  ], "variables": ["0101"]},
+		{"objectives": [13, 2 ], "variables": ["0101"]},
+		{"objectives": [20, 1 ], "variables": ["0101"]},
+	    ]
+	},
+	population: {
+		"solutions": [
+		{"objectives": [8, 9  ], "variables": ["0101", "ae"]},
+		{"objectives": [12, 5 ], "variables": ["0101", "aj"]},
+		]
+	}
+    }),
+    success: function(result) {
+	console.log(result)
+    },
+    error: function(error){
+	console.log(error.responseText);
+    }
+});
+```
+
 Warning
 -
 

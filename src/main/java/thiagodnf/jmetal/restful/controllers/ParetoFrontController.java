@@ -23,19 +23,19 @@ public class ParetoFrontController {
 	@PostMapping(value = "/generator/pareto-front")
 	public Population greeting(@RequestBody Population population) {
 
-		LOGGER.info("Receiving a population");
+		LOGGER.info("Converting for a list of dumb solutions");
 
 		List<DumbSolution> newPopulation = ConvertUtils.toListOfDumbSolutions(population);
 
-		LOGGER.info("Converting for a list of dumb solutions");
+		LOGGER.info("Generating the pareto-front set");
 
 		List<DumbSolution> paretoFront = SolutionListUtils.getNondominatedSolutions(newPopulation);
 
-		LOGGER.info("Generating the pareto-front set");
+		LOGGER.info("Converting for a population object instance");
 
 		Population pParetoFront = ConvertUtils.toPopulation(paretoFront);
 
-		LOGGER.info("Converting for a population object instance");
+		LOGGER.info("Sending");
 
 		return pParetoFront;
 	}

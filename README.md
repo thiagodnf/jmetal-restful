@@ -69,5 +69,9 @@ Each task has its own JSON-formatted string required. At the following there are
 }
 ```
 
+Warning
+
+This is not an official JMetal Product product.
+
 
 

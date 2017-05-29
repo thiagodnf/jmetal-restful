@@ -68,11 +68,11 @@ Each task has its own JSON-formatted string required. At the following there are
 }
 ```
 
-<h3>Generate Pareto-front</h3>
+<h3>Calculate Quality Indicators</h3>
 
 **The request type**: POST
 
-**URL:** /generator/pareto-front
+**URL:** /calculate/quality-indicators
 
 **Body:**
 ```json
@@ -88,8 +88,8 @@ Each task has its own JSON-formatted string required. At the following there are
     },
     population: {
         "solutions": [
-            {"objectives": [8, 9  ], "variables": ["0101", "ae"]},
-            {"objectives": [12, 5 ], "variables": ["0101", "aj"]},
+            {"objectives": [8, 9  ], "variables": ["0101"]},
+            {"objectives": [12, 5 ], "variables": ["0101"]},
         ]
     }
 }

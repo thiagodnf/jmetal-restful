@@ -68,6 +68,56 @@ Each task has its own JSON-formatted string required. At the following there are
 }
 ```
 
+<h3>Generate Pareto-front</h3>
+
+**The request type**: POST
+
+**URL:** /generator/pareto-front
+
+**Body:**
+```json
+{
+    paretoFront:{
+        "solutions": [
+            {"objectives": [2, 11 ], "variables": ["0101"]},
+            {"objectives": [4, 7  ], "variables": ["0101"]},
+            {"objectives": [8, 5  ], "variables": ["0101"]},
+            {"objectives": [13, 2 ], "variables": ["0101"]},
+            {"objectives": [20, 1 ], "variables": ["0101"]},
+        ]
+    },
+    population: {
+        "solutions": [
+            {"objectives": [8, 9  ], "variables": ["0101", "ae"]},
+            {"objectives": [12, 5 ], "variables": ["0101", "aj"]},
+        ]
+    }
+}
+```
+
+**Response:**
+```json
+{
+	"metrics": {
+		"epsilon": 6.0,
+		"hypervolume": 0.0,
+		"igd_plus": 4.294427190999916,
+		"error_ratio": 1.0,
+		"igd": 2.5768197453450252,
+		"gd": 2.5495097567963922,
+		"spread": 0.7296692939273969
+	},
+	"normalizedMetrics": {
+		"epsilon": 0.4,
+		"hypervolume": 0.3111111111111111,
+		"igd_plus": 0.3109049957647721,
+		"igd": 0.17210390200811762,
+		"gd": 0.18625616238044682,
+		"spread": 0.6831692859568865
+	}
+}
+```
+
 Warning
 -
 

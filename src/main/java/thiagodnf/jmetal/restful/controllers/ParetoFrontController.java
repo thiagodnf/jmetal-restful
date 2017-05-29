@@ -23,6 +23,6 @@ public class ParetoFrontController {
 
 		List<DumbSolution> paretoFront = SolutionListUtils.getNondominatedSolutions(newPopulation);
 
-		return ConvertUtils.toPopulation(population.getId(), paretoFront);
+		return ConvertUtils.toPopulation(paretoFront);
 	}
 }

@@ -62,17 +62,14 @@ public class ConvertUtils {
 	 * Convert from a list of {@link DumbSolution} to {@link Population}. The list parameter
 	 * cannot be null
 	 * 
-	 * @param id the unique identifier
 	 * @param list the list of dumb solutions that should be converted
 	 * @return an instance of Population class
 	 */
-	public static Population toPopulation(String id, List<DumbSolution> list) {
+	public static Population toPopulation(List<DumbSolution> list) {
 
 		checkNotNull(list, "The list of dumb solutions cannot be null");
 
 		Population population = new Population();
-
-		population.setId(id);
 
 		for (DumbSolution dumbSolution : list) {
 			population.getSolutions().add(ConvertUtils.toSolution(dumbSolution));

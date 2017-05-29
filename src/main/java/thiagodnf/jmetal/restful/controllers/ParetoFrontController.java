@@ -2,6 +2,8 @@ package thiagodnf.jmetal.restful.controllers;
 
 import java.util.List;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -15,14 +17,26 @@ import thiagodnf.jmetal.restful.utils.ConvertUtils;
 @RestController
 public class ParetoFrontController {
 
+	private final Logger LOGGER = LoggerFactory.getLogger(ParetoFrontController.class);
+
 	@CrossOrigin
 	@PostMapping(value = "/generator/pareto-front")
 	public Population greeting(@RequestBody Population population) {
 
+		LOGGER.info("Receiving a population");
+
 		List<DumbSolution> newPopulation = ConvertUtils.toListOfDumbSolutions(population);
+
+		LOGGER.info("Converting for a list of dumb solutions");
 
 		List<DumbSolution> paretoFront = SolutionListUtils.getNondominatedSolutions(newPopulation);
 
-		return ConvertUtils.toPopulation(paretoFront);
+		LOGGER.info("Generating the pareto-front set");
+
+		Population pParetoFront = ConvertUtils.toPopulation(paretoFront);
+
+		LOGGER.info("Converting for a population object instance");
+
+		return pParetoFront;
 	}
 }

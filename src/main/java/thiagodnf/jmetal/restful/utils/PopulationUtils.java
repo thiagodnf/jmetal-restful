@@ -3,8 +3,12 @@ package thiagodnf.jmetal.restful.utils;
 import static com.google.common.base.Preconditions.checkArgument;
 import static com.google.common.base.Preconditions.checkNotNull;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import thiagodnf.jmetal.restful.beans.Population;
 import thiagodnf.jmetal.restful.beans.Solution;
+import thiagodnf.jmetal.restful.jmetal.solution.DumbSolution;
 
 /**
  * this utility class is for getting some information about the {@link Population}
@@ -71,6 +75,50 @@ public class PopulationUtils {
 		}
 
 		return numberOfVariables;
+	}
+
+	public static List<DumbSolution> removeRepeatedSolutions(List<DumbSolution> population) {
+		List<DumbSolution> newPopulation = new ArrayList<>();
+
+		for (DumbSolution s : population) {
+
+			if (!contains(newPopulation, s)) {
+				newPopulation.add(s.copy());
+			}
+		}
+
+		return newPopulation;
+	}
+
+	public static boolean contains(List<DumbSolution> population, DumbSolution s1) {
+
+		checkNotNull(population, "The population object cannot be null");
+		checkNotNull(s1, "The solution s1 object cannot be null");
+
+		for (DumbSolution s2 : population) {
+
+			if (isEqual(s1, s2)) {
+				return true;
+			}
+		}
+
+		return false;
+	}
+
+	public static boolean isEqual(DumbSolution s1, DumbSolution s2) {
+
+		checkNotNull(s1, "The solution s1 object cannot be null");
+		checkNotNull(s2, "The solution s2 object cannot be null");
+		checkArgument(s1.getNumberOfObjectives() == s2.getNumberOfObjectives(),	"the number of objectives should be equal");
+
+		for (int i = 0; i < s1.getNumberOfObjectives(); i++) {
+
+			if (s1.getObjective(i) != s2.getObjective(i)) {
+				return false;
+			}
+		}
+
+		return true;
 	}
 
 }

@@ -13,6 +13,7 @@ import org.uma.jmetal.util.SolutionListUtils;
 import thiagodnf.jmetal.restful.beans.Population;
 import thiagodnf.jmetal.restful.jmetal.solution.DumbSolution;
 import thiagodnf.jmetal.restful.utils.ConvertUtils;
+import thiagodnf.jmetal.restful.utils.PopulationUtils;
 
 @RestController
 public class ParetoFrontController {
@@ -30,6 +31,10 @@ public class ParetoFrontController {
 		LOGGER.info("Generating the pareto-front set");
 
 		List<DumbSolution> paretoFront = SolutionListUtils.getNondominatedSolutions(newPopulation);
+		
+		LOGGER.info("Removing the repeated solutions");
+		
+		paretoFront = PopulationUtils.removeRepeatedSolutions(paretoFront);
 
 		LOGGER.info("Converting for a population object instance");
 

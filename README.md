@@ -16,7 +16,8 @@ JMetal RESTFul is able to do the following tasks:
 - **Calculate Quality Indicators** - This task calculates quality indicators (such as Hypervolume, IGD, GD, and so on) given a set of solutions and a pareto-front set
 
 How this works
---
+-
+
 The following image shows how this tools works
 
 <img src="https://raw.githubusercontent.com/thiagodnf/jmetal-restful/master/src/main/resources/assets/how-this-works.png" />
@@ -24,7 +25,7 @@ The following image shows how this tools works
 First, the tool receives as input a JSON-formatted string in the body of a POST request provided by a client. Next, this one converts this string into a object instance that will used to run the algorithms available in JMetal Framework. When it is done, JMetal RESTFul will return a JSON-formatted string to the client. 
 
 Usage
---
+-
 
 Each task has its own JSON-formatted string required. At the following there are some examples how to use each task.
 
@@ -70,9 +71,9 @@ Each task has its own JSON-formatted string required. At the following there are
 ```
 
 Warning
---
+-
 
-This is not an official JMetal Product product.
+This is not an official JMetal Framework product
 
 
 

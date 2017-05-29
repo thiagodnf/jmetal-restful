@@ -30,8 +30,10 @@ Run the server
 You can run the Application class as desktop application or run the following command
 
 ```sh
-java -jar jmetal-restful-<version>.jar
+java -jar jmetal-restful-1.0.0.jar
 ```
+
+Now that the service is up, visit http://localhost:8080/
 
 Usage
 -
